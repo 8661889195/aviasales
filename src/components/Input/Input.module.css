@@ -1,0 +1,43 @@
+input {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%); 
+  border-radius: 2px;
+  border: 1px solid #9abbce;
+  transition-duration: 300ms;
+}
+
+input:checked {
+  border-color: #2196f3;
+}
+
+.label {
+  height: 100%;
+  position: relative;
+  color: #4a4a4a;
+  line-height: 20px;
+  font-size: 13px;
+  padding: 10px 0 10px 50px;
+}
+
+.label:hover {
+  background-color: #f1fcff;
+  cursor: pointer;
+}
+
+.label svg {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%); 
+  opacity: 0;
+  transition-duration: 300ms;
+}
+
+input:checked ~ svg {
+  opacity: 1;
+}

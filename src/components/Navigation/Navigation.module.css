@@ -1,0 +1,21 @@
+.navigationContainer {
+  list-style-type: none; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0; 
+}
+
+.navigationContainer > li:first-child {
+  border-radius: 6px 0 0 6px;
+  border-width: 2px;
+}
+
+.navigationContainer > li:last-child {
+  border-radius: 0 6px 6px 0;
+  border-width: 2px 2px 2px 0;
+}
+.navigationContainer > li {
+  border: solid #dfe5ec;
+  border-width: 2px 2px 2px 0;
+}
